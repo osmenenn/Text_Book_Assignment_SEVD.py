@@ -1,0 +1,79 @@
+#Ismoil Boboev 
+#SEDV TextBook Assignment 4-4.2-6-6.2
+#Guess the number game 
+
+
+
+
+import random
+##Having fun with this exericise 
+
+print("Good day, Welcome my child this program is very smart it can generate random number, ")
+print("in fact it can generate random number faster then you anyways, anywaysss, lets see you loose. ")
+
+#Random number generator 
+num = random.randint(1, 10)
+guess = None
+
+
+#setting the condition loop
+while guess != num:
+    guess = input("throw me a number between 1 and 10: ")
+    guess = int(guess)
+
+    if guess == num:
+        print("Hmmm, not impressed, cgrt! ")
+        break
+    elif guess >= num:
+        print("You thought you could beat a machine? you keep guessing too low ")
+    elif guess <= num: 
+        print("Ugh, can you already guess right, you are guessing too high....")
+
+
+
+
+
+
+#
+
+
+#Introducing the program to the user, promting the user some questions. 
+print("Ugh. Welcome, my child, this program will ask you some question to guess the color or size, ")
+
+print("OK, which one of these choices could be green? ")
+
+print("1. Cherry")
+print("2. Watermalon")
+print("3. Pea ")
+print("4. Pumpkin")
+guess = int(input())
+#Condition to check the correct answer 
+if guess == 1:
+ print("NO, Cherry is not part of the answer ")
+elif guess == 2:
+ print("Yes, Watermalons are in fact green. ")
+elif guess == 3: 
+ print("Yes, Peas are green. ")
+elif guess == 4:
+ print("Pumpkin is not green. ")
+
+ #Introducing the program to the user, promting the user some questions. 
+
+
+
+print("OK, which one of these choices could be small? ")
+
+print("1. Cherry")
+print("2. Watermalon")
+print("3. Pea ")
+print("4. Pumpkin")
+
+guess = int(input())
+if guess == 1:
+ print("NO, Watermalon is not part of the answer ")
+elif guess == 2:
+ print("Yes, Cherrys are in fact small. ")
+elif guess == 3: 
+ print("Yes, Peas are small. ")
+elif guess == 4:
+ print("Pumpkin are not usually small. ")
